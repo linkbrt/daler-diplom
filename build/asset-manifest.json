@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0beb267.css",
-    "main.js": "/static/js/main.7002da73.js",
+    "main.css": "/static/css/main.e4e800cb.css",
+    "main.js": "/static/js/main.ad6bec1a.js",
     "static/js/787.5b0f3255.chunk.js": "/static/js/787.5b0f3255.chunk.js",
+    "static/media/Без имени-1.png": "/static/media/Без имени-1.61e08bdfd9147ff001ff.png",
+    "static/media/Без имени-2.png": "/static/media/Без имени-2.346398751a30a7c39c8c.png",
+    "static/media/Баннер пресеты.png": "/static/media/Баннер пресеты.b4bd91b36da72a47f9ce.png",
+    "static/media/баннер вст.png": "/static/media/баннер вст.d609bbc99733240038ae.png",
     "static/media/IMAGE (1).png": "/static/media/IMAGE (1).6954dd67c16009279bd9.png",
     "static/media/IMAGE2.png": "/static/media/IMAGE2.a6e09cca6b86be907847.png",
     "static/media/IMAGE.png": "/static/media/IMAGE.e3c926cc478364d8db6c.png",
+    "static/media/asdasdasd.svg": "/static/media/asdasdasd.f95c0cbf1358cf69115b88337d282c41.svg",
     "index.html": "/index.html",
     "static/media/menu.svg": "/static/media/menu.8508aa9a15df60c14ebe0c234c49d105.svg",
     "static/media/play.svg": "/static/media/play.d661d95eac3148910ef75832d881a6ae.svg",
-    "main.d0beb267.css.map": "/static/css/main.d0beb267.css.map",
-    "main.7002da73.js.map": "/static/js/main.7002da73.js.map",
+    "main.e4e800cb.css.map": "/static/css/main.e4e800cb.css.map",
+    "main.ad6bec1a.js.map": "/static/js/main.ad6bec1a.js.map",
     "787.5b0f3255.chunk.js.map": "/static/js/787.5b0f3255.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0beb267.css",
-    "static/js/main.7002da73.js"
+    "static/css/main.e4e800cb.css",
+    "static/js/main.ad6bec1a.js"
   ]
 }
