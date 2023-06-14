@@ -41,6 +41,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    'http://194.87.147.17:8200/',
+]
+
 CORS_ORIGIN_ALLOW_ALL = DEBUG
 
 
