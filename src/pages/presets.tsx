@@ -15,7 +15,11 @@ export default function PresetsPage() {
   useEffect(() => {getItems()}, [])
   return (
     <main>
-      <h1 className="page-title">PRESETS</h1>
+      <div className="banner">
+        <img src={require('../images/Баннер пресеты.png')} alt="" />
+      </div>
+      <div className="banner-back"></div>
+      <h1 className="page-title" style={{left: "45%"}}>ПРЕСЕТЫ</h1>
       <div className="row w-100 row-cols-3 row-gap-5 mt-5 ms-0">
         {items.map((item: any) => <div className="col-12 col-md-4" key={item.id}><PackCard item={item}/></div>)}
       </div>

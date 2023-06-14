@@ -12,7 +12,11 @@ export default function Home() {
 
   return (
     <main>
-      <h1 className="page-title">ПОВЫШАЙ НАВЫК С ПРОДЮСИРОВАНИЯ ПОМОЩЬЮ НАШИХ ИНСТРУМЕНТОВ</h1>
+      <div className="banner">
+        <img src={require('../images/Без имени-1.png')} alt="" />
+      </div>
+      <div className="banner-back"></div>
+      <h1 className="page-title" style={{left: "3%"}}>ПОВЫШАЙ НАВЫК С ПРОДЮСИРОВАНИЯ ПОМОЩЬЮ НАШИХ ИНСТРУМЕНТОВ</h1>
       <div className="row row-gap-5 w-100 mt-5 main-row">
         <div className="col-12 col-md-4">
           <div className="card" onClick={() => navigate('/packs')}>

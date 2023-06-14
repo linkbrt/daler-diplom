@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
   font-family: 'Exo 2', sans-serif;
@@ -34,15 +35,18 @@ header {
   min-height: 100vh;
 }
 
+
 .page-title {
-  min-height: 20vh;
   justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  align-items: center;
+  display: inline-flex;
+  padding-bottom: 0;
+  margin: auto;
+  padding: 1em 0 0.5em;
+  justify-self: center;
+  align-self: center;
   font-weight: 400;
   font-size: 30px;
+  line-height: 3em;
   color: white;
   text-transform: uppercase;
   position: relative;
@@ -84,6 +88,38 @@ header {
   font-size: 10px;
   line-height: 24px;
   color: #FDFDFD;
+}
+
+.about-text {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.banner {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+
+  overflow-x: hidden;
+}
+
+.banner-back {
+  min-height: 60vh;
+  position: static;
+}
+
+.banner::after {
+  position: relative;
+  min-height: 100%;
+  content: " ";
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .pack-card {

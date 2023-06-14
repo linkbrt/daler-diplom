@@ -60,6 +60,8 @@ function App() {
 
     // static
     {path: "/about", element: <AboutPage/>},
+    {path: "/sogl"},
+    {path: "/uslovie"},
   ])
   return (
     <div className="container-fluid justify-content-center">

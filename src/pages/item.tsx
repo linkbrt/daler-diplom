@@ -60,7 +60,7 @@ export default function Item() {
   }, [])
 
   useEffect(() => {
-    audio.current.src = 'http://${backend_host}' + item?.file;
+    audio.current.src = `http://${backend_host}` + item?.file;
     audio.current.controls = true;
   }, [item])
 

@@ -15,7 +15,11 @@ export default function PluginsPage() {
   useEffect(() => {getItems()}, [])
   return (
     <main>
-      <h1 className="page-title">PLUGINS</h1>
+      <div className="banner">
+        <img src={require('../images/баннер вст.png')} alt="" />
+      </div>
+      <div className="banner-back"></div>
+      <h1 className="page-title" style={{left: "45%"}}>ПЛАГИНЫ</h1>
       <div className="row w-100 row-cols-3 row-gap-5 mt-5 ms-0">
         {items.map((item: any) => <div className="col-12 col-md-4" key={item.id}><PackCard item={item}/></div>)}
       </div>

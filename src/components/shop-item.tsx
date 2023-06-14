@@ -6,17 +6,17 @@ export default function ShopItem(props: any) {
   const [amount, setAmount] = useState(parseInt(props.shop.get(props.item.id.toString())))
 
   return (
-    <div className='row shop-item  d-flex align-items-center' key={props.item.id}>
-      <div className="col-1 d-flex justify-content-center" 
+    <div className='row shop-item  d-flex align-items-center justify-content-between' key={props.item.id}>
+      <div className="col-auto col-md-1 d-flex justify-content-center" 
       onClick={() => props.deleteItemFromShop(props.item.id)}>
         <img src={require('../images/white_close.png')} alt=""/>
       </div>
-      <div className="col-1">
+      <div className="col-auto">
         <img src={`http://${backend_host}` + props.item.path} width={64} height={64} alt="" />
       </div>
-      <div className="col-6">{props.item.title}</div>
-      <div className="col">{props.item.price} p</div>
-      <div className="col d-flex">
+      <div className="col">{props.item.title}</div>
+      <div className="col-auto p-1">{props.item.price} p</div>
+      <div className="col-auto p-1 d-flex">
         <input type="number" disabled className='input-num' value={amount} 
         onInput={() => console.log(1)} onChange={(e) => setAmount(parseInt(e.target.value))}/>
         <div className="controls d-flex flex-column justify-content-between">
@@ -32,7 +32,7 @@ export default function ShopItem(props: any) {
           </div>
         </div>
       </div>
-      <div className="col">{props.item.price * amount} р</div>
+      <div className="col-auto">{props.item.price * amount} р</div>
     </div>
   )
 }

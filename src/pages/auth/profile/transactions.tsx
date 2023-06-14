@@ -6,7 +6,7 @@ import { backend_host } from '../../../App';
 
 
 export default function ProfileTransactions(props: any) {
-  const [card, setCard] = useState(props.profile.card_num);
+  const [card, setCard] = useState(props.profile?.card_num);
   let [showCardModal, setShowCardModal] = useState(false);
 
   let [num, setNum] = useState('');

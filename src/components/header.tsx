@@ -2,11 +2,13 @@ import { backend_host } from "../App";
 
 import logo from "../images/menu.svg";
 
+import main_logo from "../images/asdasdasd.svg";
+
 export default function Header(props: any) {
   return (
     <header className="header">
       <a href="/" className="col col-md-3">
-        <img src={require('../images/logo.png')} alt="SoundStash" />
+        <img src={main_logo} width={220} alt="SoundStash1" />
       </a>
       <a href="/plugins" className="col header-a hidedd text-center">Плагины</a>
       <a href="/packs" className="col header-a hidedd text-center">Паки</a>

@@ -9,14 +9,10 @@ export default function Footer(props: any) {
       <div className="col-12 col-md-2">
         <h5 className="footer-title">О нас</h5>
         <a href="/about" className="footer-link">О нас</a>
-        <a href="/about" className="footer-link">Пользовательское соглашение</a>
-        <a href="/about" className="footer-link">Условия и конфиденциальность</a>
       </div>
       <div className="col-12 col-md-2">
         <h5 className="footer-title">Помощь</h5>
         <a href="/profile" className="footer-link">Аккаунт</a>
-        <a href="/callback" className="footer-link">Связаться с нами</a>
-        <a href="/faq" className="footer-link">Частые вопросы</a>
       </div>
       <div className="col-12 col-md-2">
         <h5 className="footer-title">Магазин</h5>

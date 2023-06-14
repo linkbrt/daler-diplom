@@ -66,7 +66,7 @@ export default function Shop() {
         <div className="row row-gap-4">
           <div className="col-4 shop-text">Итог</div>
           <div className="col-8 shop-text">13h</div>
-          <div className="col-2 p-0"><div className="shop-blue-btn">Оплата</div></div>
+          <div className="col-2 p-0"><div className="shop-blue-btn" onClick={() => navigate('/pay-success')}>Оплата</div></div>
         </div>
         
       </> : 
