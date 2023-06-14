@@ -19,7 +19,7 @@ import PresetsPage from './pages/presets';
 import Footer from './components/footer';
 import AboutPage from './pages/static/about';
 
-export const backend_host = '194.87.147.17:8201/';
+export const backend_host = '194.87.147.17:8201';
 
 function App() {
   async function getUserInfo() {
