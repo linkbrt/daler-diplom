@@ -34,6 +34,7 @@ export default function Header(props: any) {
           <a href="/presets" className="col header-a black text-center">Пресеты</a>
           <a href="/favorites" className="col header-a black text-center">Избранные</a>
           <a href="/shop" className="col header-a black text-center bold">Корзина</a>
+          {props.user ? <a href="/login" className="col header-a black text-center bold">Логин</a> : <a href="/profile" className="col header-a black text-center bold">Профиль</a> }
           </div>
         </div>
     </header>
