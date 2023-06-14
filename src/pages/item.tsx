@@ -80,7 +80,7 @@ export default function Item() {
 
   return (
     <div className="item-card d-flex">
-      <img src={'http://${backend_host}' + item?.path} className='item-img' alt="" />
+      <img src={`http://${backend_host}` + item?.path} className='item-img' alt="" />
       <div className="item-info d-flex flex-wrap">
         <h2 className="item-header w-100">{item?.title}</h2>
         <h3 className="item-subheader w-100">Loops & Samples Pack</h3>
