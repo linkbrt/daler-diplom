@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { getShop } from './favorites';
 import { getFavorites } from './favorites';
+import { backend_host } from '../App';
 
 
 export default function Item() {
@@ -21,7 +22,7 @@ export default function Item() {
   const [shop, setShop] = useState(getShop());
 
   async function getData() {
-    const response = await axios.post('http://localhost:8000/api/get-item-info/', { id })
+    const response = await axios.post(`http://${backend_host}/api/get-item-info/`, { id })
     setItem(response.data);
   }
 
@@ -59,7 +60,7 @@ export default function Item() {
   }, [])
 
   useEffect(() => {
-    audio.current.src = 'http://localhost:8000' + item?.file;
+    audio.current.src = 'http://${backend_host}' + item?.file;
     audio.current.controls = true;
   }, [item])
 
@@ -79,7 +80,7 @@ export default function Item() {
 
   return (
     <div className="item-card d-flex">
-      <img src={'http://localhost:8000' + item?.path} className='item-img' alt="" />
+      <img src={'http://${backend_host}' + item?.path} className='item-img' alt="" />
       <div className="item-info d-flex flex-wrap">
         <h2 className="item-header w-100">{item?.title}</h2>
         <h3 className="item-subheader w-100">Loops & Samples Pack</h3>

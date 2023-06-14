@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import PackCard from '../components/pack-card'
 import axios from 'axios';
+import { backend_host } from '../App';
 
 
 export default function PacksPage() {
   const [items, setItems] = useState([]);
 
   async function getItems(){
-    const response = await axios.get('http://localhost:8000/api/get-items/?type=pack');
+    const response = await axios.get(`http://${backend_host}/api/get-items/?type=pack`);
     setItems(response.data);
   }
 

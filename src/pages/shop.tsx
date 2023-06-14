@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { getShop } from './favorites';
 import axios from 'axios';
 import ShopItem from '../components/shop-item';
+import { backend_host } from '../App';
 
 
 export default function Shop() {
@@ -13,7 +14,7 @@ export default function Shop() {
 
 
   async function getItems(){
-    const response = await axios.get('http://localhost:8000/api/get-items/');
+    const response = await axios.get(`http://${backend_host}/api/get-items/`);
     setItems(response.data.filter((item:any) => shop.has(item.id.toString())));
     getAllCost();
   }

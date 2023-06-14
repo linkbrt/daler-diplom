@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import FavItem from '../components/fav-item';
+import { backend_host } from '../App';
 
 
 interface IItem {
@@ -38,7 +39,7 @@ export default function Favorites() {
   const [shop, setShop] = useState(getShop());
 
   async function getItems(){
-    const response = await axios.get('http://localhost:8000/api/get-items/');
+    const response = await axios.get(`http://${backend_host}/api/get-items/`);
     setFilterItems(response.data.filter((item: any) => item.id.toString() in favorites));
     console.log(favorites.length);
   }

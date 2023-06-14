@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import close_svg from '../../../images/close.png'
 import axios from 'axios';
+import { backend_host } from '../../../App';
 
 
 export default function ProfileTransactions(props: any) {
@@ -20,7 +21,7 @@ export default function ProfileTransactions(props: any) {
       }
     }
     axios.post(
-      "http://localhost:8000/api/set-user-card/", {
+      `http://${backend_host}/api/set-user-card/`, {
         card_num: num + ":" + date + ":" + cvv + "name"
       }, config
     )

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { ChangeEvent, useState } from 'react'
+import { backend_host } from '../../../App';
 
 
 export default function ProfileMain(props: any) {
@@ -13,7 +14,7 @@ export default function ProfileMain(props: any) {
     formData.append('image', e.target.files[0]);
     console.log(image);
     axios.post(
-      "http://localhost:8000/api/set-user-image/", 
+      `http://${backend_host}/api/set-user-image/`, 
       formData, {
       headers: {
         'Content-Type': 'multipart/form-data',
@@ -27,7 +28,7 @@ export default function ProfileMain(props: any) {
         <div className="col d-flex align-items-center"><p className="profile-text">Фото</p></div>
         <div className="col position-relative">
           <p className="profile-text text-end">
-            <img src={"http://localhost:8000" + props.profile?.image} width={46} height={46} alt="" style={{borderRadius: "50%"}} />
+            <img src={"http://${backend_host}" + props.profile?.image} width={46} height={46} alt="" style={{borderRadius: "50%"}} />
             <input type="file" accept="image/png, image/jpeg" onInput={handleFiles} className='file-inp' />
           </p>
         </div>

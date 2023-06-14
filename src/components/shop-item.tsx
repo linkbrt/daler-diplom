@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { backend_host } from '../App';
 
 
 export default function ShopItem(props: any) {
@@ -11,7 +12,7 @@ export default function ShopItem(props: any) {
         <img src={require('../images/white_close.png')} alt=""/>
       </div>
       <div className="col-1">
-        <img src={"http://localhost:8000" + props.item.path} width={64} height={64} alt="" />
+        <img src={`http://${backend_host}` + props.item.path} width={64} height={64} alt="" />
       </div>
       <div className="col-6">{props.item.title}</div>
       <div className="col">{props.item.price} p</div>

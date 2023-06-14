@@ -19,6 +19,8 @@ import PresetsPage from './pages/presets';
 import Footer from './components/footer';
 import AboutPage from './pages/static/about';
 
+export const backend_host = '127.0.0.1:8000';
+
 function App() {
   async function getUserInfo() {
     const config = {
@@ -27,7 +29,7 @@ function App() {
       }
     }
     const response = await axios.post<IProfile>(
-      "http://localhost:8000/api/get-user-info/", {}, config
+      `http://${backend_host}/api/get-user-info/`, {}, config
       ).catch((error) => {
         if (error) {
           setUser({ message: 'Not auth' } as unknown as IProfile);

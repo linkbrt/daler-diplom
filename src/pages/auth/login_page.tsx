@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { setTokenToStorage } from '../../components/protected-route';
 import { useNavigate } from 'react-router-dom';
+import { backend_host } from '../../App';
 
 
 
@@ -11,7 +12,7 @@ export default function LoginPage(props: any) {
   const navigate = useNavigate();
 
   async function loginUser(credentials: any) {
-    return fetch('http://localhost:8000/api-token-auth/', {
+    return fetch(`http://${backend_host}/api-token-auth/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

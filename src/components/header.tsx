@@ -1,3 +1,5 @@
+import { backend_host } from "../App";
+
 export default function Header(props: any) {
   return (
     <header className="header">
@@ -11,7 +13,7 @@ export default function Header(props: any) {
       <a href="/shop" className="col header-a text-center bold">Корзина</a>
       {props.user ? 
         <a href='/profile' className="col-2 text-end">
-          <img src={"http://localhost:8000" + props.user?.image} alt="img" 
+          <img src={`http://${backend_host}` + props.user?.image} alt="img" 
           width={46} height={46} style={{borderRadius: "50%"}} />
         </a> 
         : <a href="/login" className="col-2 text-end">Логин</a>}
