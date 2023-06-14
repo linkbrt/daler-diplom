@@ -705,7 +705,7 @@ header {
       padding: 0 !important;
     }
 
-    .header-a {
+    .hidedd {
       display: none;
     }
     .main-row {
@@ -732,4 +732,10 @@ header {
       width: 90%;
       left: 5%;
     }
+ }
+
+ .black {
+  color: black;
+  display: block;
+  text-align: start !important;
  }
