@@ -20,7 +20,7 @@ export default function Header(props: any) {
         </a> 
         : <a href="/login" className="col-2 text-end header-a hidedd">Логин</a>
       }
-        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        <a data-bs-toggle="offcanvas" id='menu' href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
           <img src={logo} alt="" />
         </a>
         <div className="offcanvas offcanvas-start" tabIndex={-1} id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">

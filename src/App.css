@@ -694,7 +694,14 @@ header {
   background-attachment: fixed;
  }
 
+ #menu {
+  display: none;
+ }
+
  @media screen and (max-width: 786px) {
+    #menu {
+      display: block;
+    }
     .container-fluid {
       width: 100%;
       /* padding: 0; */
