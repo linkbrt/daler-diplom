@@ -28,7 +28,7 @@ export default function ProfileMain(props: any) {
         <div className="col d-flex align-items-center"><p className="profile-text">Фото</p></div>
         <div className="col position-relative">
           <p className="profile-text text-end">
-            <img src={"http://${backend_host}" + props.profile?.image} width={46} height={46} alt="" style={{borderRadius: "50%"}} />
+            <img src={`http://${backend_host}` + props.profile?.image} width={46} height={46} alt="" style={{borderRadius: "50%"}} />
             <input type="file" accept="image/png, image/jpeg" onInput={handleFiles} className='file-inp' />
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function ProfileMain(props: any) {
         <div className="col"><p className="profile-text text-end">{props.profile?.email}</p></div>
         <div className="profile-line"></div>
         <div className="col"><p className="profile-text">Пароль</p></div>
-        <div className="col"><p className="profile-text text-end">linkbrt</p></div>
+        <div className="col"><p className="profile-text text-end">********</p></div>
         <div className="profile-line"></div>
       </div>
     </>

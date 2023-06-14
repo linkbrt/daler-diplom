@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <main>
       <h1 className="page-title">ПОВЫШАЙ НАВЫК С ПРОДЮСИРОВАНИЯ ПОМОЩЬЮ НАШИХ ИНСТРУМЕНТОВ</h1>
-      <div className="row row-cols-3 row-gap-5 w-100 mt-5">
-        <div className="col-4">
+      <div className="row row-gap-5 w-100 mt-5 main-row">
+        <div className="col-12 col-md-4">
           <div className="card" onClick={() => navigate('/packs')}>
             <img src={require('../images/IMAGE.png')} className='p-5' 
             alt="" style={{backgroundColor: "black", minHeight: "200px"}}/>
@@ -27,7 +27,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="col-4">
+        <div className="col-12 col-md-4">
           <div className="card h-100" onClick={() => navigate('/presets')}>
             <img src={require('../images/IMAGE2.png')} className='p-5' 
             alt="" style={{backgroundColor: "black", minHeight: "200px"}}/>
@@ -40,7 +40,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="col-4">
+        <div className="col-12 col-md-4">
           <div className="card h-100" onClick={() => navigate('/plugins')}>
             <img src={require('../images/IMAGE (1).png')} className='p-5' 
             alt="" style={{backgroundColor: "black", minHeight: "200px"}}/>

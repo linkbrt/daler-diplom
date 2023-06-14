@@ -18,14 +18,14 @@ export default function Profile(props: any) {
   return (
     <>
     <div className="row profile-menu">
-      <div className="col-2 p-0" data-active={active === 1} onClick={() => setActive(1)}>
+      <div className="col-auto col-md-2 p-0 pe-2" data-active={active === 1} onClick={() => setActive(1)}>
         <h4 className="profile-menu-title">Профиль</h4>
       </div>
-      <div className="col-2 p-0" data-active={active === 2} onClick={() => setActive(2)}>
+      <div className="col-auto col-md-2 p-0" data-active={active === 2} onClick={() => setActive(2)}>
         <h4 className="profile-menu-title">Транзакции</h4>
       </div>
       <div className="col"></div>
-      <div className="col-2 p-0" data-active={active === 3} 
+      <div className="col-auto col-md-2 p-0" data-active={active === 3} 
       onClick={() => {setActive(3); localStorage.removeItem('token'); props.getUserInfo(); navigate('/login')}}>
         <h4 className="profile-menu-title">Выйти из профиля</h4>
       </div>

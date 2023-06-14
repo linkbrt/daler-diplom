@@ -49,7 +49,7 @@ export default function ProfileTransactions(props: any) {
         <p className="new-card-inp-label">Имя и Фамилия держателя карты</p>
         <input type="text" className='new-card-input w-100 mt-0' value={name} 
         onInput={(e: any) => setName(e.target.value)}/>
-        <button className="new-card-btn" onClick={() => sendData()}>Привязать</button>
+        <button className="new-card-btn" onClick={() => {sendData(); setShowCardModal(false);}}>Привязать</button>
       </div>
     </div>
 
@@ -59,7 +59,7 @@ export default function ProfileTransactions(props: any) {
     <>
       <h2 className="profile-title">Привязанные карты</h2>
       <div className="profile-card-info d-flex">
-        {card !== '' ? <>
+        {card && card !== '' ? <>
           <img src={require('../../../images/visa.png')} alt="" width={34} height={21}/>
           <div className="profile-card-text flex-grow-1">Visa **** **** **** {card.slice(12, 16)}</div>
           <p className="profile-orange w-auto align-items-end" onClick={() => setCard('')}>Удалить карту</p>

@@ -687,3 +687,49 @@ header {
   border: none;
   padding: 1em;
  }
+
+
+ #root {
+  height: 100%;
+  background-attachment: fixed;
+ }
+
+ @media screen and (max-width: 786px) {
+    .container-fluid {
+      width: 100%;
+      /* padding: 0; */
+      display: block;
+    }
+
+    .card > img {
+      padding: 0 !important;
+    }
+
+    .header-a {
+      display: none;
+    }
+    .main-row {
+      margin: 0;
+    }
+
+    .page-title {
+      font-size: 14px;
+      text-align: center;
+      min-height: 0;
+      padding: 2em 0;
+    }
+
+    .footer {
+      max-height: fit-content;
+      padding-bottom: 2em; 
+    }
+
+    .login-row {
+      padding: 0 !important;
+    }
+
+    .new-card-modal {
+      width: 90%;
+      left: 5%;
+    }
+ }

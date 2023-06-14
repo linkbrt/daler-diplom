@@ -41,18 +41,18 @@ export default function ForgotPassword() {
             </div>
           </div>
           <div className="row justify-content-center mt-4">
-            <div className="col-3 text-center">
+            <div className="col-10 col-md-3 text-center">
               <input type="email" required className="login-input w-100" 
               onChange={e => setEmail(e.target.value)} placeholder='Введите почту'/>
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-3 mt-3">
+            <div className="col-10 col-md-3 mt-3">
               <button type='submit' className='login-btn'>Подтвердить</button>
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-3 mt-3">
+            <div className="col-10 col-md-3 mt-3">
               <a href="/registration" className="login-a">Нет аккаунта?  Регистрация</a>
             </div>
           </div>

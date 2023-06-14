@@ -17,7 +17,7 @@ export default function PacksPage() {
     <main>
       <h1 className="page-title">SAMPLE PACK</h1>
       <div className="row w-100 row-cols-4 row-gap-5 mt-5 ms-0">
-        {items.map((item: any) => <div className="col-3" key={item.id}><PackCard item={item}/></div>)}
+        {items.map((item: any) => <div className="col-12 col-md-3" key={item.id}><PackCard item={item}/></div>)}
       </div>
     </main>
   )

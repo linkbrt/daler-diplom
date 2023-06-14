@@ -12,11 +12,11 @@ export default function Header(props: any) {
       <a href="/favorites" className="col header-a text-center">Избранные</a>
       <a href="/shop" className="col header-a text-center bold">Корзина</a>
       {props.user ? 
-        <a href='/profile' className="col-2 text-end">
-          <img src={`http://${backend_host}` + props.user?.image} alt="img" 
+        <a href='/profile' className="col-2 text-end header-a">
+          <img src={`http://${backend_host}` + props.user.image} alt="img" 
           width={46} height={46} style={{borderRadius: "50%"}} />
         </a> 
-        : <a href="/login" className="col-2 text-end">Логин</a>}
+        : <a href="/login" className="col-2 text-end header-a">Логин</a>}
     </header>
   )
 }

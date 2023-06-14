@@ -46,27 +46,27 @@ export default function LoginPage(props: any) {
         </div>
       </div>
       <div className="row justify-content-center mt-4">
-        <div className="col-3 text-center"><input type="text" required 
+        <div className="col-10 col-md-3 text-center"><input type="text" required 
         className="login-input w-100" 
         onChange={e => setUsername(e.target.value)} placeholder='Логин'/></div>
       </div>
       <div className="row justify-content-center mt-2">
-        <div className="col-3 text-center"><input type="text" required 
+        <div className="col-10 col-md-3 text-center"><input type="text" required 
         className="login-input w-100" 
         onChange={e => setPassword(e.target.value)} placeholder='Пароль'/></div>
       </div>
       <div className="row justify-content-center">
-        <div className="col-3 mt-3">
+        <div className="col-10 col-md-3 mt-3">
           <a href='/forgot-password' className="login-a">Забыли пароль?</a>
         </div>
       </div>
       <div className="row justify-content-center">
-        <div className="col-3 mt-3">
+        <div className="col-10 col-md-3 mt-3">
           <button type='submit' className='login-btn'>Войти</button>
         </div>
       </div>
       <div className="row justify-content-center">
-        <div className="col-3 mt-3">
+        <div className="col-10 col-md-3 mt-3">
           <a href="/registration" className="login-a">Нет аккаунта?  Регистрация</a>
         </div>
       </div>
