@@ -79,11 +79,11 @@ export default function Item() {
   }
 
   return (
-    <div className="item-card d-flex">
-      <img src={`http://${backend_host}` + item?.path} className='item-img' alt="" />
-      <div className="item-info d-flex flex-wrap">
+    <div className="item-card d-flex row">
+      <img src={`http://${backend_host}` + item?.path} className='item-img col-12 col-md-4' alt="" />
+      <div className="item-info d-flex flex-wrap col-12 col-md-8">
         <h2 className="item-header w-100">{item?.title}</h2>
-        <h3 className="item-subheader w-100">Loops & Samples Pack</h3>
+        {/* <h3 className="item-subheader w-100">{item?.type}</h3> */}
         <audio ref={audio} style={{display: "none"}}/>
  
         <svg className='item-play' onClick={handleAudio} xmlns="http://www.w3.org/2000/svg" 

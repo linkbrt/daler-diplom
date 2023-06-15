@@ -49,9 +49,14 @@ export default function Favorites() {
   }, [])
 
   function removeFromFavorites(id: number) {
+    console.log(favorites)
+    console.log(id)
     const index = favorites.indexOf(id.toString(), 0);
+    console.log(index);
     if (index > -1) {
       favorites.splice(index, 1);
+    } else {
+      localStorage.setItem('favorite', '');
     }
     localStorage.setItem('favorite', favorites.join(','));
     setFavorites(getFavorites());
